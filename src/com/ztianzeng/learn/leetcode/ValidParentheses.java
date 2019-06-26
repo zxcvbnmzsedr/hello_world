@@ -16,6 +16,7 @@ import java.util.Stack;
  * 2）若此时栈为空，则直接返回false
  * 3）若不为对应的左半边括号，反之返回false
  * </p>
+ * <a href='https://github.com/zxcvbnmzsedr/leetcode/blob/master/problems/20.validParentheses.md'></a>
  * <a href='https://leetcode.com/problems/valid-parentheses/submissions/'></a>
  *
  * @author zhaotianzeng
