@@ -1,4 +1,4 @@
-package com.ztianzeng.learn.leetcode.code;
+package com.ztianzeng.learn.leetcode;
 
 import org.junit.Assert;
 import org.junit.Test;
