@@ -64,54 +64,53 @@ public class ValidPalindrome {
     }
 
     /**
-     * 执行用时 : 17 ms, 在所有 Java 提交中击败了36.72%的用户
-     * 内存消耗 :40.7 MB, 在所有 Java 提交中击败了34.26%的用户
+     * 执行用时 : 12 ms, 在所有 Java 提交中击败了72.17%的用户
+     * 内存消耗 :40.6 MB, 在所有 Java 提交中击败了35.35%的用户
      *
      * 使用 头尾双指针
      * @param s 需要验证的字符串
      * @return
      */
     public boolean isPalindrome(String s) {
-        s = handle(s.toLowerCase());
-        if (s.isEmpty() || s.length() == 1) {
+        if (s == null || s.isEmpty()) {
             return true;
         }
-
+        s = s.toLowerCase();
         int head = 0;
-
         int tail = s.length() - 1;
         char[] chars = s.toCharArray();
         while (head < tail) {
-            char headChar = chars[head++];
-            char tailChar = chars[tail--];
+            char headChar = chars[head];
 
+            if (!isValid(headChar)) {
+                head++;
+                continue;
+            }
+            char tailChar = chars[tail];
+            if (!isValid(tailChar)) {
+                tail--;
+                continue;
+            }
             if (headChar != tailChar) {
                 return false;
+            } else {
+                head++;
+                tail--;
             }
         }
         return true;
-
     }
 
-    /**
-     * 根据 ASCALL 判断
-     *
-     * @return
-     */
-    private String handle(String s) {
-        char[] chars = s.toCharArray();
-        StringBuilder str = new StringBuilder();
-
-        for (int i = 0; i < chars.length; i++) {
-            char headChar = chars[i];
-            if (headChar >= 48 && headChar <= 57) {
-                str.append(headChar);
-            }
-            if (headChar >= 97 && headChar <= 122) {
-                str.append(headChar);
-            }
+    private boolean isValid(char headChar) {
+        if (headChar >= 48 && headChar <= 57) {
+            return true;
         }
-        return str.toString();
-
+        if (headChar >= 97 && headChar <= 122) {
+            return true;
+        }
+        if (headChar == ' ') {
+            return false;
+        }
+        return false;
     }
 }
