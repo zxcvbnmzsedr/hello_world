@@ -65,7 +65,7 @@ public class ValidPalindrome {
 
     /**
      * 执行用时 : 12 ms, 在所有 Java 提交中击败了72.17%的用户
-     * 内存消耗 :40.6 MB, 在所有 Java 提交中击败了35.35%的用户
+     * 内存消耗 :39.6MB, 在所有 Java 提交中击败了47.36%的用户
      *
      * 使用 头尾双指针
      * @param s 需要验证的字符串
@@ -78,15 +78,15 @@ public class ValidPalindrome {
         s = s.toLowerCase();
         int head = 0;
         int tail = s.length() - 1;
-        char[] chars = s.toCharArray();
+
         while (head < tail) {
-            char headChar = chars[head];
+            char headChar = s.charAt(head);
 
             if (!isValid(headChar)) {
                 head++;
                 continue;
             }
-            char tailChar = chars[tail];
+            char tailChar = s.charAt(tail);
             if (!isValid(tailChar)) {
                 tail--;
                 continue;
