@@ -31,5 +31,14 @@
             <artifactId>fastjson</artifactId>
             <version>1.2.31</version>
         </dependency>
+
+        <!--json diff-->
+        <dependency>
+            <groupId>com.flipkart.zjsonpatch</groupId>
+            <artifactId>zjsonpatch</artifactId>
+            <version>0.3.0</version>
+        </dependency>
+        <!-- json diff-->
+
     </dependencies>
 </project>
