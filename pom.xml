@@ -23,6 +23,7 @@
     <modules>
         <module>workflow/workflow-camunda</module>
         <module>workflow/workflow-flowable</module>
+        <module>framework/axon</module>
     </modules>
 
     <dependencies>
