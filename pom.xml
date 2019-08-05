@@ -21,8 +21,8 @@
         </plugins>
     </build>
     <modules>
-        <module>workflow-camunda</module>
-        <module>workflow-flowable</module>
+        <module>workflow/workflow-camunda</module>
+        <module>workflow/workflow-flowable</module>
     </modules>
 
     <dependencies>
