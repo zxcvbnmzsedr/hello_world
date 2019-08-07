@@ -29,12 +29,12 @@ public class PowerOfFour {
 
     @Test
     public void test1() {
-        Assert.assertTrue(isPowerOfFour(16));
+        Assert.assertTrue(isPowerOfFour2(16));
     }
 
     @Test
     public void test2() {
-        Assert.assertFalse(isPowerOfFour(5));
+        Assert.assertFalse(isPowerOfFour2(5));
     }
 
     public boolean isPowerOfFour(int num) {
@@ -42,5 +42,19 @@ public class PowerOfFour {
             num /= 4;
         }
         return num == 1;
+    }
+    public boolean isPowerOfFour2(int num) {
+        if (num == 1) {
+            return true;
+        }
+        if (num < 4) {
+            return false;
+        }
+
+        if ((num & (num - 1)) != 0) {
+            return false;
+        }
+
+        return (num & 0x55555555) == num;
     }
 }
