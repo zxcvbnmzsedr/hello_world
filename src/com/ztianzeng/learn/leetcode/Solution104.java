@@ -23,7 +23,7 @@ import org.junit.Test;
  * @version V1.0
  * @date 2019-07-22 16:12
  */
-public class MaximumDepthOfBinaryTree {
+public class Solution104 {
 
     @Test
     public void test() {

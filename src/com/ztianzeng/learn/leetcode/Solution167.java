@@ -29,7 +29,7 @@ import org.junit.Test;
  * @date 2019-07-26 14:28
  * @version V1.0
  */
-public class TwoSum2InputArrayIsSorted {
+public class Solution167 {
     @Test
     public void test() {
         int[] ints = twoSum(new int[]{2, 7, 11, 15}, 9);

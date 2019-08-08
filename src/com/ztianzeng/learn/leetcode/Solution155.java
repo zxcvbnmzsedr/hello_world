@@ -37,12 +37,12 @@ import java.util.Stack;
  * @date 2019-07-26 13:30
  * @version V1.0
  */
-public class MinStack {
+public class Solution155 {
     private Stack<Integer> stack;
     private Stack<Integer> minStack;
 
     /** initialize your data structure here. */
-    public MinStack() {
+    public Solution155() {
         this.stack = new Stack<>();
         minStack = new Stack<>();
     }
@@ -72,7 +72,7 @@ public class MinStack {
     @Test
     public void test() {
 
-        MinStack minStack = new MinStack();
+        Solution155 minStack = new Solution155();
         minStack.push(-2);
         minStack.push(0);
         minStack.push(-3);
@@ -86,7 +86,7 @@ public class MinStack {
     @Test
     public void test2() {
 
-        MinStack minStack = new MinStack();
+        Solution155 minStack = new Solution155();
         minStack.push(512);
         minStack.push(-1024);
         minStack.push(-1024);

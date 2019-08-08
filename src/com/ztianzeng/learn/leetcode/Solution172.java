@@ -26,7 +26,7 @@ import org.junit.Test;
  * @date 2019-07-26 15:13
  * @version V1.0
  */
-public class FactorialTrailingZeroes {
+public class Solution172 {
     @Test
     public void test() {
         int i = trailingZeroes(3);

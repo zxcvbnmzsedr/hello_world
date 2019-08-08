@@ -25,7 +25,7 @@ import org.junit.Test;
  * @date 2019-08-07 10:53
  * @version V1.0
  */
-public class PowerOfFour {
+public class Solution342 {
 
     @Test
     public void test1() {

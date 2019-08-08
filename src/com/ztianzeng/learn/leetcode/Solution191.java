@@ -36,7 +36,7 @@ import org.junit.Test;
  * @date 2019-07-27 16:00
  * @version V1.0
  */
-public class NumberOf1Bits {
+public class Solution191 {
     @Test
     public void text() {
         Assert.assertEquals(hammingWeight(0b11111111111111111111111111111101),31);

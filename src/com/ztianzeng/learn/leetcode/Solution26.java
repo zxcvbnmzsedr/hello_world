@@ -16,7 +16,7 @@ import static com.ztianzeng.learn.leetcode.PrintUtil.print;
  * @version V1.0
  * @date 2019-06-26 21:53
  */
-public class RemoveDuplicatesFromSortArray {
+public class Solution26 {
     @Test
     public void test() {
         int[] nums = new int[]{1, 2, 2, 3};

@@ -31,7 +31,7 @@ import java.util.Stack;
  * @date 2019-07-30 17:52
  * @version V1.0
  */
-public class ImplementQueueUsingStacks {
+public class Solution232 {
     @Test
     public void test() {
         MyQueue queue = new MyQueue();

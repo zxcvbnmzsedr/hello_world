@@ -17,7 +17,7 @@ import org.junit.Test;
  * @date 2019-07-29 09:40
  * @version V1.0
  */
-public class ReverseLinkedList {
+public class Solution206 {
     @Test
     public void test() {
         ListNode o1 = new ListNode(1);

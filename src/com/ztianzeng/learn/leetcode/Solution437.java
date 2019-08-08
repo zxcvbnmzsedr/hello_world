@@ -45,7 +45,7 @@ import org.junit.Test;
  * @date 2019-08-08 16:29
  * @version V1.0
  */
-public class Solution437_1 {
+public class Solution437 {
     @Test
     public void test() {
         TreeNode root = new TreeNode(10);

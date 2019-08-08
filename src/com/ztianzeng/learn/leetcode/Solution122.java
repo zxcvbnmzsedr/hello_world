@@ -33,7 +33,7 @@ import org.junit.Test;
  * @date 2019-07-24 21:26
  * @version V1.0
  */
-public class BestTimeToBuyAndSellStock2 {
+public class Solution122 {
     @Test
     public void test() {
         int[] prices = new int[]{7, 1, 5, 3, 6, 4};

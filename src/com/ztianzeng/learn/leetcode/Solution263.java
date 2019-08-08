@@ -36,7 +36,7 @@ import org.junit.Test;
  * @date 2019-07-30 18:22
  * @version V1.0
  */
-public class UglyNumber {
+public class Solution263 {
 
     @Test
     public void test() {

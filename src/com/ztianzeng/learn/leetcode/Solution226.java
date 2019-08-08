@@ -32,7 +32,7 @@ import org.junit.Test;
  * @date 2019-07-30 17:35
  * @version V1.0
  */
-public class InvertBinaryTree {
+public class Solution226 {
 
     @Test
     public void test(){
