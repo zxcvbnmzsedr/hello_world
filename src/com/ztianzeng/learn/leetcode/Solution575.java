@@ -1,5 +1,10 @@
 package com.ztianzeng.learn.leetcode;
 
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.util.Arrays;
+
 /**
  * Given an integer array with even length, where different numbers in this array represent different kinds of candies.
  * Each number means one candy of the corresponding kind.
@@ -34,4 +39,28 @@ package com.ztianzeng.learn.leetcode;
  * @version V1.0
  */
 public class Solution575 {
+
+    @Test
+    public void test() {
+        int[] candies = {1, 1, 2, 2, 3, 3};
+        int i = distributeCandies(candies);
+        Assert.assertEquals(i, 3);
+    }
+
+    /**
+     * 当糖果的种类大于一半时，妹妹能够拿到 n / 2 个糖果
+     * 如果糖果种类小于一半，妹妹能够拿到n个糖果
+     * @param candies
+     * @return
+     */
+    public int distributeCandies(int[] candies) {
+        int length = candies.length;
+        int count = (int) Arrays.stream(candies).distinct().count();
+        if (count > length / 2) {
+            return length / 2;
+        } else {
+            return count;
+        }
+    }
+
 }
