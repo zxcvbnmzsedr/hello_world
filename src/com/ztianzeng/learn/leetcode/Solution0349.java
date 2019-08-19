@@ -31,7 +31,7 @@ import java.util.Set;
  * @date 2019-08-07 13:21
  * @version V1.0
  */
-public class Solution349 {
+public class Solution0349 {
     @Test
     public void test() {
         int[] one = {1, 2, 2, 1};

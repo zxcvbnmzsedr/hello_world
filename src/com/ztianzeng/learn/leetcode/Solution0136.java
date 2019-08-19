@@ -21,7 +21,7 @@ import org.junit.Test;
  * @date 2019-07-26 09:31
  * @version V1.0
  */
-public class Solution136 {
+public class Solution0136 {
     @Test
     public void test1() {
         int i = singleNumber(new int[]{2, 2, 1});

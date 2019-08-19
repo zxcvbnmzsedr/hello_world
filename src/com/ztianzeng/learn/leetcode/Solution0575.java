@@ -38,7 +38,7 @@ import java.util.Arrays;
  * @date 2019-08-09 18:03
  * @version V1.0
  */
-public class Solution575 {
+public class Solution0575 {
 
     @Test
     public void test() {

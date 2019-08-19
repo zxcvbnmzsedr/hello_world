@@ -26,7 +26,7 @@ import org.junit.Test;
  * @date 2019-07-22 18:03
  * @version V1.0
  */
-public class Solution121 {
+public class Solution0121 {
     @Test
     public void test() {
         int[] prices = new int[]{7, 1, 5, 3, 6, 4};

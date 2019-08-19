@@ -10,7 +10,7 @@ import org.junit.Test;
  * @version V1.0
  * @date 2019-07-19 14:18
  */
-public class Solution88 {
+public class Solution0088 {
 	@Test
 	public void test1() {
 		int[] nums1 = new int[]{1, 2, 3, 0, 0, 0};

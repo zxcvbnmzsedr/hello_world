@@ -30,7 +30,7 @@ import java.util.Map;
  * @date 2019-07-30 16:46
  * @version V1.0
  */
-public class Solution219 {
+public class Solution0219 {
     @Test
     public void test() {
         Assert.assertTrue(containsNearbyDuplicate(new int[]{1, 2, 3, 1}, 3));

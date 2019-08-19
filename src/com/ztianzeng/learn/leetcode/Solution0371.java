@@ -20,7 +20,7 @@ import org.junit.Assert;
  * @date 2019-08-09 17:39
  * @version V1.0
  */
-public class Solution371 {
+public class Solution0371 {
     public void test() {
         Assert.assertEquals(getSum(1, 2), 3);
         Assert.assertEquals(getSum(-2, 3), 1);

@@ -26,7 +26,7 @@ import java.util.Arrays;
  * @date 2019-07-30 18:33
  * @version V1.0
  */
-public class Solution283 {
+public class Solution0283 {
     @Test
     public void test() {
         int[] ints = {0, 1, 0, 3, 12};

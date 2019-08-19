@@ -25,7 +25,7 @@ import org.junit.Test;
  * @date 2019-08-07 10:53
  * @version V1.0
  */
-public class Solution342 {
+public class Solution0342 {
 
     @Test
     public void test1() {

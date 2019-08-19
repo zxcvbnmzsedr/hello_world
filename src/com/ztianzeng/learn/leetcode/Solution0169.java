@@ -25,7 +25,7 @@ import org.junit.Test;
  * @date 2019-07-26 15:32
  * @version V1.0
  */
-public class Solution169 {
+public class Solution0169 {
     @Test
     public void test() {
         int i = majorityElement(new int[]{3, 2, 3});

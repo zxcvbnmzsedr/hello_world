@@ -50,7 +50,7 @@ import org.junit.Test;
  * @date 2019-08-08 18:01
  * @version V1.0
  */
-public class Solution129 {
+public class Solution0129 {
     @Test
     public void test() {
         TreeNode treeNode = new TreeNode(1);

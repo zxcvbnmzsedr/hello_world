@@ -23,7 +23,7 @@ import java.util.Stack;
  * @version V1.0
  * @date 2019-06-25 21:46
  */
-public class Solution20 {
+public class Solution0020 {
     @Test
     public void test() {
         Assert.assertTrue(isValid(""));
