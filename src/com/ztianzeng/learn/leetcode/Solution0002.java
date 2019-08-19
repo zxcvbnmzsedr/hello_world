@@ -40,9 +40,58 @@ public class Solution0002 {
         System.out.println(listNode.next.next.val);
     }
 
+    @Test
+    public void test2() {
+        ListNode l1 = new ListNode(5);
+        ListNode l2 = new ListNode(5);
+
+        ListNode listNode = addTwoNumbers(l1, l2);
+        System.out.println(listNode.val);
+        System.out.println(listNode.next.val);
+    }
+
+    /**
+     * 相加
+     * 使用临时变量carried标记是否需要进一位。
+     * 如果最终的总和大于10，需要再后面再进一位。
+     * 比如[5] [5] 最后输出的应该是 [0] [1]
+     * @param l1
+     * @param l2
+     * @return
+     */
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        int carried = 0;
         ListNode tempNode = new ListNode(-1);
-        return null;
+        ListNode node = tempNode;
+        ListNode l1Next = l1;
+        ListNode l2Next = l2;
+        int sum = 0;
+        while (l1Next != null || l2Next != null) {
+            sum = 0;
+            if (l1Next != null) {
+                sum += l1Next.val;
+                l1Next = l1Next.next;
+            }
+            if (l2Next != null) {
+                sum += l2Next.val;
+                l2Next = l2Next.next;
+            }
+            if (carried > 0) {
+                sum += carried;
+                carried = 0;
+            }
+            if (sum >= 10) {
+                carried += 1;
+            }
+
+            node.next = new ListNode(sum % 10);
+            node = node.next;
+        }
+        if (sum >= 10) {
+            node.next = new ListNode(1);
+        }
+
+        return tempNode.next;
     }
 
 
