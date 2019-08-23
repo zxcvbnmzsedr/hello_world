@@ -2,8 +2,6 @@ package com.ztianzeng.learn.leetcode;
 
 import org.junit.Test;
 
-import java.util.Optional;
-
 /**
  * Given a linked list, remove the n-th node from the end of list and return its head.
  *
@@ -30,7 +28,7 @@ public class Solution0019 {
         head.next = new ListNode(2);
         head.next.next = new ListNode(3);
         head.next.next.next = new ListNode(4);
-        head.next.next.next = new ListNode(5);
+        head.next.next.next.next = new ListNode(5);
         ListNode listNode = new Normal().removeNthFromEnd(head, 2);
         while (listNode != null) {
             System.out.println(listNode.val);
@@ -48,24 +46,20 @@ public class Solution0019 {
          */
         public ListNode removeNthFromEnd(ListNode head, int n) {
 
-            int c = 0;
             ListNode dummyHead = new ListNode(-1);
             dummyHead.next = head;
             ListNode p = dummyHead;
             ListNode q = dummyHead;
-            while (p != null) {
-                if (q == null) {
-                    p = Optional.ofNullable(p.next).map(a -> a.next).orElse(null);
-                } else if (c >= n) {
-                    p = p.next;
-                }else {
-                    q = q.next;
-                }
-                c++;
+            while (n != 0) {
+                q = q.next;
+                n--;
             }
-
-
-            return head;
+            while (q.next != null) {
+                p = p.next;
+                q = q.next;
+            }
+            p.next = p.next.next;
+            return dummyHead.next;
         }
     }
 
