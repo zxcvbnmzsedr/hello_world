@@ -1,5 +1,6 @@
 package com.ztianzeng.learn.leetcode;
 
+import com.ztianzeng.learn.leetcode.model.ListNode;
 import org.junit.Test;
 
 /**
@@ -95,12 +96,4 @@ public class Solution0002 {
     }
 
 
-    public class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
 }

@@ -1,5 +1,6 @@
 package com.ztianzeng.learn.leetcode.code;
 
+import com.ztianzeng.learn.leetcode.model.ListNode;
 import org.junit.Test;
 
 /**
@@ -25,26 +26,6 @@ public class AddTwoNumbers {
         System.out.println(addTwoNumbers(l1, l2));
     }
 
-    public class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-
-        @Override
-        public String toString() {
-            StringBuilder stringBuffer = new StringBuilder();
-            stringBuffer.append(val + " ");
-            ListNode node = next;
-            while (node != null) {
-                stringBuffer.append(node.val + " ");
-                node = node.next;
-            }
-            return stringBuffer.toString();
-        }
-    }
 
     /**
      * 两个数字相加

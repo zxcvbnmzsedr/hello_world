@@ -1,5 +1,6 @@
 package com.ztianzeng.learn.leetcode;
 
+import com.ztianzeng.learn.leetcode.model.ListNode;
 import org.junit.Test;
 
 /**
@@ -61,7 +62,7 @@ public class Solution0203 {
 
             if (val == temp.next.val) {
                 temp.next = temp.next.next;
-            }else {
+            } else {
                 temp = temp.next;
             }
 
@@ -70,12 +71,5 @@ public class Solution0203 {
         return header.next;
     }
 
-    public class ListNode {
-        int val;
-        ListNode next;
 
-        ListNode(int x) {
-            val = x;
-        }
-    }
 }
