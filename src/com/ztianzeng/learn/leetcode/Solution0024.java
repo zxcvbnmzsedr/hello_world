@@ -1,6 +1,7 @@
 package com.ztianzeng.learn.leetcode;
 
 import com.ztianzeng.learn.leetcode.model.ListNode;
+import org.junit.Test;
 
 /**
  * Given a linked list, swap every two adjacent nodes and return its head.
@@ -20,7 +21,23 @@ import com.ztianzeng.learn.leetcode.model.ListNode;
  * @version V1.0
  */
 public class Solution0024 {
+
+    @Test
+    public void test() {
+        ListNode head = new ListNode(1);
+        head.next = new ListNode(2);
+        head.next.next = new ListNode(3);
+        head.next.next.next = new ListNode(4);
+        ListNode listNode = swapPairs(head);
+        System.out.println(listNode.toString());
+
+    }
+
     public ListNode swapPairs(ListNode head) {
-        return null;
+        ListNode temp = head;
+
+
+
+        return temp;
     }
 }

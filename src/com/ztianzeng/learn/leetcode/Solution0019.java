@@ -1,6 +1,7 @@
 package com.ztianzeng.learn.leetcode;
 
 import com.ztianzeng.learn.leetcode.model.ListNode;
+import org.junit.Assert;
 import org.junit.Test;
 
 /**
@@ -31,10 +32,9 @@ public class Solution0019 {
         head.next.next.next = new ListNode(4);
         head.next.next.next.next = new ListNode(5);
         ListNode listNode = new Normal().removeNthFromEnd(head, 2);
-        while (listNode != null) {
-            System.out.println(listNode.val);
-            listNode = listNode.next;
-        }
+        System.out.println(listNode);
+        Assert.assertEquals("1->2->3->5", listNode.toString());
+
     }
 
     public static class Normal extends Solution0019 {
