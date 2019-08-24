@@ -34,10 +34,13 @@ public class Solution0024 {
     }
 
     public ListNode swapPairs(ListNode head) {
-        ListNode temp = head;
+        if(head == null || head.next == null){
+            return head;
+        }
+        ListNode next = head.next;
+        head.next = swapPairs(next.next);
+        next.next = head;
+        return next;
 
-
-
-        return temp;
     }
 }
