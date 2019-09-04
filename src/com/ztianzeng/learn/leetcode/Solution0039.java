@@ -1,5 +1,9 @@
 package com.ztianzeng.learn.leetcode;
 
+import org.junit.Test;
+
+import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -41,6 +45,19 @@ import java.util.List;
  * @version V1.0
  */
 public class Solution0039 {
+    @Test
+    public void test() {
+        int[] candidates = {2, 3, 6, 7};
+        List<List<Integer>> lists = combinationSum(candidates, 7);
+        for (List<Integer> subset : lists) {
+
+            for (Integer integer : subset) {
+                System.out.print(integer);
+            }
+            System.out.println();
+        }
+    }
+
     /**
      * 计算总和
      * @param candidates
@@ -48,7 +65,25 @@ public class Solution0039 {
      * @return
      */
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
-        return null;
+        List<List<Integer>> list = new LinkedList<>();
+        Arrays.sort(candidates);
+        backtrack(list, new LinkedList<>(), target, candidates);
+        return list;
+    }
+
+    private void backtrack(List<List<Integer>> list, List<Integer> tempList, int remain, int[] candidates) {
+        if (remain < 0) {
+            return;
+        } else if (remain == 0) {
+            list.add(new LinkedList<>(tempList));
+        } else {
+            for (int i = 0; i < candidates.length; i++) {
+                tempList.add(candidates[i]);
+                backtrack(list, tempList, remain - candidates[i], candidates);
+                tempList.remove(tempList.size() - 1);
+            }
+        }
+
     }
 
 }
