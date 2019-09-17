@@ -2,8 +2,6 @@ package com.ztianzeng.learn.leetcode;
 
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -60,6 +58,7 @@ public class Solution0078 {
         for (int i = start; i < nums.length; i++) {
             tempList.add(nums[i]);
             backtrack(list, tempList, nums, i + 1);
+            // 删除已经处理过的字符
             tempList.remove(tempList.size() - 1);
         }
     }
