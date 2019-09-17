@@ -52,7 +52,7 @@ import org.junit.Test;
  * @date 2019/9/16 3:43 下午
  * @version V1.0
  */
-public class Solution0010 {
+public class Solution0012 {
     @Test
     public void test1() {
         Assert.assertEquals(intToRoman(3), "III");
