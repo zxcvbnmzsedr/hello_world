@@ -54,6 +54,12 @@ public class Solution0014 {
         return temp;
     }
 
+    /**
+     * 寻找公共的部分
+     * @param left
+     * @param right
+     * @return
+     */
     public String findPrefix(String left, String right) {
         StringBuilder sb = new StringBuilder();
         char[] leftChar = left.toCharArray();
