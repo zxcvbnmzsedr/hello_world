@@ -1,7 +1,5 @@
 package com.ztianzeng.learn.leetcode.model;
 
-import com.ztianzeng.learn.leetcode.code.AddTwoNumbers;
-
 import java.util.Optional;
 
 public class ListNode {
