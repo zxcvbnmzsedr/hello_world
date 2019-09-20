@@ -23,4 +23,15 @@ public class ListNode {
         }
         return stringBuffer.toString();
     }
+
+    public static ListNode create(int... val) {
+        ListNode head = new ListNode(-1);
+        ListNode temp = head;
+        for (int i : val) {
+            temp.next = new ListNode(i);
+            temp = temp.next;
+        }
+        return head.next;
+
+    }
 }
