@@ -30,10 +30,18 @@ import org.junit.Test;
  */
 public class Solution0025 {
     @Test
-    public void test() {
+    public void test1() {
         ListNode head = ListNode.create(1, 2, 3, 4, 5);
 
         ListNode listNode = reverseKGroup(head, 2);
+        System.out.println(listNode);
+    }
+
+    @Test
+    public void test2() {
+        ListNode head = ListNode.create(1, 2, 3, 4, 5);
+
+        ListNode listNode = reverseKGroup(head, 1);
         System.out.println(listNode);
     }
 
@@ -91,6 +99,7 @@ public class Solution0025 {
      */
     public ListNode reverseList(ListNode prev, int k) {
         ListNode last = prev;
+
         for (int i = 0; i < k + 1; i++) {
             last = last.next;
             if (last == null && k != i) {
@@ -99,12 +108,12 @@ public class Solution0025 {
         }
         ListNode tail = prev.next;
         ListNode curr = prev.next.next;
-        while (tail != curr) {
+        while (curr != last) {
             ListNode next = curr.next;
             curr.next = prev.next;
             prev.next = curr;
             tail.next = next;
-            curr = tail;
+            curr = next;
 
         }
         return tail;
