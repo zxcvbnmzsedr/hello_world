@@ -7,6 +7,8 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
+ * 实现LRU结构
+ *
  * @author zhaotianzeng
  * @date 2019/9/21 3:23 下午
  * @version V1.0
