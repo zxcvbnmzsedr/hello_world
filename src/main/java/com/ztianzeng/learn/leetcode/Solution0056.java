@@ -1,6 +1,5 @@
 package com.ztianzeng.learn.leetcode;
 
-import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.ArrayList;

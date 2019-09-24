@@ -1,10 +1,11 @@
 package com.ztianzeng.learn.leetcode;
 
-import org.apache.commons.collections4.CollectionUtils;
 import org.junit.Test;
 
-import java.util.*;
-import java.util.stream.Collectors;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
 
 /**
  * Given an array of strings, group anagrams together.
