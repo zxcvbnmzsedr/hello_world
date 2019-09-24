@@ -1,4 +1,4 @@
-package com.ztianzeng.learn.leetcode.array;
+package com.ztianzeng.learn.leetcode.pointer;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -19,7 +19,7 @@ import org.junit.Test;
  * @date 2019/9/24 6:10 下午
  * @version V1.0
  */
-public class Array_最大连续1的个数 {
+public class QMPointer_最大连续1的个数 {
     @Test
     public void test() {
         int[] nums = {1, 1, 0, 1, 1, 1};
