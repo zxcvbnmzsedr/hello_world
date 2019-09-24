@@ -1,6 +1,6 @@
 package com.ztianzeng.learn.leetcode.code;
 
-import com.ztianzeng.learn.leetcode.PrintUtil;
+import com.ztianzeng.learn.leetcode.utils.PrintUtil;
 import org.junit.Test;
 
 import java.util.HashMap;

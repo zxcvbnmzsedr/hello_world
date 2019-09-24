@@ -1,4 +1,4 @@
-package com.ztianzeng.learn.leetcode.array;
+package com.ztianzeng.learn.leetcode.arraystring;
 
 import org.junit.Assert;
 import org.junit.Test;

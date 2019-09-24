@@ -1,4 +1,4 @@
-package com.ztianzeng.learn.leetcode.string;
+package com.ztianzeng.learn.leetcode.arraystring;
 
 /**
  * 实现 strStr() 函数。

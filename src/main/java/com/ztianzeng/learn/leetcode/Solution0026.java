@@ -3,7 +3,7 @@ package com.ztianzeng.learn.leetcode;
 import org.junit.Assert;
 import org.junit.Test;
 
-import static com.ztianzeng.learn.leetcode.PrintUtil.print;
+import static com.ztianzeng.learn.leetcode.utils.PrintUtil.print;
 
 /**
  * Given a sorted array nums, remove the duplicates in-place such that each element appear only once and return the new length.

@@ -1,6 +1,6 @@
-package com.ztianzeng.learn.leetcode.array;
+package com.ztianzeng.learn.leetcode.arraystring;
 
-import com.ztianzeng.learn.leetcode.PrintUtil;
+import com.ztianzeng.learn.leetcode.utils.PrintUtil;
 import org.junit.Test;
 
 import java.util.ArrayList;

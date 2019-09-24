@@ -1,4 +1,4 @@
-package com.ztianzeng.learn.leetcode;
+package com.ztianzeng.learn.leetcode.utils;
 
 import com.alibaba.fastjson.JSON;
 
