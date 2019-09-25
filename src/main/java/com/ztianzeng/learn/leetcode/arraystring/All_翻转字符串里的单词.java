@@ -38,7 +38,7 @@ import org.junit.Test;
  * @date 2019/9/25 9:31 上午
  * @version V1.0
  */
-public class All_转字符串里的单词 {
+public class All_翻转字符串里的单词 {
     @Test
     public void test1() {
         String the_sky_is_blue = reverseWords("the sky is blue");
