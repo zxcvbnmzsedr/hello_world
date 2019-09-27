@@ -32,7 +32,7 @@ import com.ztianzeng.learn.leetcode.model.ListNode;
  * @date 2019/9/27 4:05 下午
  * @version V1.0
  */
-public class String_删除链表中的节点 {
+public class Link_删除链表中的节点 {
 
     public void deleteNode(ListNode node) {
         node.val = node.next.val;
