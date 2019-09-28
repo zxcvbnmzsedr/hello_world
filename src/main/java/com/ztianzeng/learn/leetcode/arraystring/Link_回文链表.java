@@ -35,6 +35,9 @@ public class Link_回文链表 {
     }
 
     public boolean isPalindrome(ListNode head) {
+        if (head == null || head.next == null) {
+            return true;
+        }
         //快慢指针找到链表的中点
         ListNode fast = head.next.next;
         ListNode slow = head.next;
