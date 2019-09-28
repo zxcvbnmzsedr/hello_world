@@ -1,5 +1,6 @@
 package com.ztianzeng.learn.leetcode;
 
+import com.ztianzeng.learn.leetcode.model.TreeNode;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -97,14 +98,5 @@ public class Solution0437 {
         return res;
     }
 
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
-    }
 
 }

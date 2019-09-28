@@ -1,5 +1,6 @@
 package com.ztianzeng.learn.leetcode;
 
+import com.ztianzeng.learn.leetcode.model.TreeNode;
 import org.junit.Test;
 
 /**
@@ -35,9 +36,10 @@ import org.junit.Test;
 public class Solution0226 {
 
     @Test
-    public void test(){
+    public void test() {
 
     }
+
     /**
      * 遍历二叉树 交换左右位置
      *
@@ -45,7 +47,7 @@ public class Solution0226 {
      * @return
      */
     public TreeNode invertTree(TreeNode root) {
-        if (root == null){
+        if (root == null) {
             return null;
         }
         TreeNode left = root.left;
@@ -57,16 +59,6 @@ public class Solution0226 {
         invertTree(root.left);
         invertTree(root.right);
         return root;
-    }
-
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
     }
 
 

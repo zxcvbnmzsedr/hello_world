@@ -1,5 +1,6 @@
 package com.ztianzeng.learn.leetcode;
 
+import com.ztianzeng.learn.leetcode.model.TreeNode;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -67,16 +68,6 @@ public class Solution0104 {
 
         return 1 + Math.max(maxDepth(root.left), maxDepth(root.right));
 
-    }
-
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
     }
 
 }
