@@ -48,31 +48,36 @@ public class Solution02_05_ {
     }
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        // 指针P
         ListNode p = new ListNode(-1);
-        ListNode result = p ;
+        ListNode result = p;
+        // 进位
         int s = 0;
-        while (l1 != null || l2 != null) {
+        while (l1 != null || l2 != null){
             int l1Val = 0;
-            if (l1 != null) {
+            if (l1 != null){
                 l1Val = l1.val;
                 l1 = l1.next;
             }
             int l2Val = 0;
-            if (l2 != null) {
+            if (l2 != null){
                 l2Val = l2.val;
                 l2 = l2.next;
             }
 
             int current = l1Val + l2Val + s;
             s = 0;
-            if (current >= 10) {
+            if (current >= 10){
                 current = current % 10;
                 s = 1;
             }
             p.next = new ListNode(current);
             p = p.next;
-        }
 
+        }
+        if (s == 1){
+            p.next = new ListNode(s);
+        }
 
         return result.next;
     }
