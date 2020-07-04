@@ -11,16 +11,17 @@ import java.util.List;
  * Input: [1,2,3]
  * Output:
  * [
- *   [1,2,3],
- *   [1,3,2],
- *   [2,1,3],
- *   [2,3,1],
- *   [3,1,2],
- *   [3,2,1]
+ * [1,2,3],
+ * [1,3,2],
+ * [2,1,3],
+ * [2,3,1],
+ * [3,1,2],
+ * [3,2,1]
  * ]
+ *
  * @author zhaotianzeng
- * @date 2019/9/2 11:07 上午
  * @version V1.0
+ * @date 2019/9/2 11:07 上午
  */
 public class Solution0046 {
     @Test
@@ -57,4 +58,6 @@ public class Solution0046 {
             }
         }
     }
+
+
 }
