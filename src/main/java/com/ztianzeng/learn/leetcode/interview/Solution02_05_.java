@@ -1,4 +1,4 @@
-package com.ztianzeng.learn.leetcode;
+package com.ztianzeng.learn.leetcode.interview;
 
 import com.ztianzeng.learn.leetcode.model.ListNode;
 import org.junit.Test;
