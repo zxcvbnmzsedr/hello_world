@@ -16,6 +16,12 @@ repositories {
         url = uri('http://repo.maven.apache.org/maven2')
     }
 }
+test {
+    // enable TestNG support (default is JUnit)
+    useTestNG()
+    // enable JUnit Platform (a.k.a. JUnit 5) support
+    useJUnitPlatform()
+}
 
 dependencies {
     implementation 'junit:junit:4.12'
