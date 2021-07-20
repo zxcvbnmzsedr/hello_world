@@ -13,7 +13,7 @@ apply plugin: 'maven-publish'
 repositories {
     mavenLocal()
     maven {
-        url = uri('http://repo.maven.apache.org/maven2')
+        url 'https://maven.aliyun.com/repository/public'
     }
 }
 test {
