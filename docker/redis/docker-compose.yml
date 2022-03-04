@@ -1,0 +1,29 @@
+version: '2'
+services:
+  redis1:
+    image: redis
+    container_name: redis1
+    restart: always
+    ports:
+      - "6381:6379"
+    volumes:
+      - /etc/localtime:/etc/localtime
+      - ./data1:/usr/local/etc/redis
+  redis2:
+    image: redis
+    container_name: redis2
+    restart: always
+    ports:
+      - "6382:6379"
+    volumes:
+      - /etc/localtime:/etc/localtime
+      - ./data2:/usr/local/etc/redis
+  redis3:
+    image: redis
+    container_name: redis3
+    restart: always
+    ports:
+      - "6383:6379"
+    volumes:
+      - /etc/localtime:/etc/localtime
+      - ./data3:/usr/local/etc/redis

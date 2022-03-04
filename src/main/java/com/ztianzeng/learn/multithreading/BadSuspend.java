@@ -19,7 +19,7 @@ public class BadSuspend {
         public void run() {
             synchronized (u) {
                 System.out.println("in " + getName());
-                Thread.currentThread().suspend();
+                Thread.currentThread().checkAccess();
                 System.out.println("out " + getName());
             }
         }
@@ -32,9 +32,9 @@ public class BadSuspend {
         // u被t1加了锁，无法继续
         t2.start();
         // t1释放u的锁，到out，然后t2得以执行
-        t1.resume();
+        t1.checkAccess();
         // t2释放u的锁，当这个时候t2还没有进入挂起状态，加了也没用
-        t2.resume();
+        t2.checkAccess();
         t1.join();
         t2.join();
 
