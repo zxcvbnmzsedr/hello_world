@@ -8,13 +8,18 @@ public class MyThread13 extends Thread {
         }
         while (true) {
             if (Thread.interrupted()) {
-                try {
-                    throw new InterruptedException(" 文件扫描任务被中断 ");
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+                throw new RuntimeException(" 文件扫描任务被中断 ");
             }
         }
-
+    }
+    public static void main(String[] args) throws InterruptedException {
+        //创建MyThread13线程类实例
+        MyThread13 thread = new MyThread13();
+        thread.start();    //启动线程
+        //延时100毫秒
+        Thread.sleep(1000);
+        //停止线程
+        thread.interrupt();
+        System.out.println("2222");
     }
 }
