@@ -1,10 +1,18 @@
 package com.ztianzeng.learn.jvm.classloader;
 
+import org.openjdk.jol.info.ClassLayout;
+
 /**
  * @author zhaotianzeng
  */
 public class ClassLoaderStudy {
     public static void main(String[] args) throws ClassNotFoundException {
+        final ClassLoader appClassLoader = ClassLoader.getSystemClassLoader();
+        final ClassLoader platformClassLoader = appClassLoader.getParent();
+        final ClassLoader bootClassLoader = appClassLoader.getParent();
+        System.out.println("systemClassLoader == " + appClassLoader);
+        System.out.println("systemClassLoader == " + bootClassLoader);
+
         String str = "hello class loader";
         System.out.println("str class loader is == " + str.getClass().getClassLoader());
         Class driver = Class.forName("java.sql.Driver");
@@ -30,4 +38,5 @@ public class ClassLoaderStudy {
         Class driverManager = Class.forName("java.sql.DriverManager");
         System.out.println("driverManager class loader is == " + driverManager.getClassLoader());
     }
+
 }

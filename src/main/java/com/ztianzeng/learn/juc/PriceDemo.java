@@ -3,16 +3,25 @@ package com.ztianzeng.learn.juc;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
-import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.TimeoutException;
+import java.util.concurrent.*;
 
 public class PriceDemo {
 
     public static void main(String[] args) throws InterruptedException {
-        PriceDemo priceDemo = new PriceDemo();
-        System.out.println(priceDemo.getPrices());
+        ExecutorService executor = Executors.newFixedThreadPool(5);
+        CompletableFuture<String> cf1 = CompletableFuture.supplyAsync(() -> {
+            System.out.println("执行step 1");
+            return "step1 result";
+        }, executor);
+        CompletableFuture<String> cf2 = CompletableFuture.supplyAsync(() -> {
+            System.out.println("执行step 2");
+            return "step2 result";
+        });
+        cf1.thenCombine(cf2, (result1, result2) -> {
+            System.out.println(result1 + " , " + result2);
+            System.out.println("执行step 3");
+            return "step3 result";
+        }).thenAccept(System.out::println);
     }
 
     private Set<String> getPrices() throws InterruptedException {
@@ -40,7 +49,6 @@ public class PriceDemo {
             this.name = name;
             this.prices = prices;
         }
-
         @Override
         public void run() {
             try {
